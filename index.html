@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA Kalender</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevBtn">&lt;</button>
+      <h2 id="monthYear">Bulan Tahun</h2>
+      <button id="nextBtn">&gt;</button>
+    </div>
+
+    <div class="weekdays">
+      <div>Min</div>
+      <div>Sen</div>
+      <div>Sel</div>
+      <div>Rab</div>
+      <div>Kam</div>
+      <div>Jum</div>
+      <div>Sab</div>
+    </div>
+
+    <div class="days-grid" id="daysGrid"></div>
+
+    <div class="notes-section">
+      <h3>Catatan Tanggal Dipilih:</h3>
+      <input type="text" id="note-input" placeholder="Tulis catatan di sini...">
+      <div id="saved-notes">Pilih tanggal untuk melihat/menulis catatan.</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
